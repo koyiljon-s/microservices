@@ -1,29 +1,18 @@
 package main 
 
 import (
+	"microservices/handlers"
 	"net/http"
-	"io/ioutil"
 	"log"
-	"fmt"
+	"os"
 )
 
 func main() {
-	// handle root path
+	l := log.New(os.Stdout, "product-api", log.LstdFlags)
+    hh := handlers.NewHello(l)
 
-	http.HandleFunc("/", func(rw http.ResponseWriter,  r*http.Request) {
-        log.Println("Hello, World!")
-		d, err := ioutil.ReadAll(r.Body)
-		if err != nil {
-			http.Error(rw, "Failed to read request body", http.StatusBadRequest)
-			return
-		}
+	sm := http.NewServeMux()
+	sm.Handle("/hello", hh)
 
-		fmt.Fprintf(rw, "Received request with body: %s", d)
-	})
-
-	http.HandleFunc("/goodbye", func(http.ResponseWriter,  *http.Request) {
-        log.Println("Goodbye, World!")
-	})
-
-	http.ListenAndServe(":9090", nil)
+	http.ListenAndServe(":9090", sm)
 }
