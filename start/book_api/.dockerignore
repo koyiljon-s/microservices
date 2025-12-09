@@ -1,0 +1,6 @@
+.env
+tmp/
+bin/
+*.exe
+*.test
+.air.toml  # Optional, you might want to commit this
