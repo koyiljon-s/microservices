@@ -10,3 +10,12 @@ Authentication is the first and most important step for system security. It help
 - OIDC
 - SAML
   
+
+### Tools
+- DDD
+- karma tracking 
+- Go
+- PostgreSQL
+- Redis
+- Scale horizontally
+  
