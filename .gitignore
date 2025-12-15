@@ -9,3 +9,4 @@ tools.md
 *.out
 vendor/
 main
+settings.json
