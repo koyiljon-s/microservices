@@ -10,3 +10,4 @@ tools.md
 vendor/
 main
 settings.json
+.vscode 
