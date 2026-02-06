@@ -3,11 +3,10 @@ package handler
 import (
 	"net/http"
 
-	"primejobs/user-service/internal/model"
-	"primejobs/user-service/internal/repository"
-	"primejobs/user-service/internal/service/jwt"
-	"primejobs/user-service/internal/service/utils"
-
+	"zippilot/authentication/internal/model"
+	"zippilot/authentication/internal/repository"
+	"zippilot/authentication/internal/service/jwt"
+	"zippilot/authentication/internal/service/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 )

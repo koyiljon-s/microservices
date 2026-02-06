@@ -1,15 +1,12 @@
-# primejobs.com
+# ZipPilot.io
 
-| **Role**     | **Description**
-|--------------|------------------------------------------------|
-| **Clients**  | Post jobs and review applications
-| **Candidates**| Apply for jobs
-| **Platform** | Provides with a list of top candidates, offers tools to help candidates create standout resumes |
+## Services
 
-## Core Architecture
-
+- Authentication
 - User Service
-- Job Service
-- Application Service
-- Resume Tools
+- URL Shortener Service
+- QR Code Service
+- Analytics Service
+- API Gateway
 - Notification Service
+

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"primejobs/user-service/internal/service/jwt"
+	"zippilot/authentication/internal/service/jwt"
 
 	"github.com/gin-gonic/gin"
 )
