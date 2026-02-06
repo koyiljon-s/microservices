@@ -1,4 +1,4 @@
-module primejobs/user-service
+module zippilot/authentication 
 
 go 1.25.4
 

@@ -2,8 +2,8 @@
 package repository
 
 import (
-	"primejobs/user-service/internal/database"
-	"primejobs/user-service/internal/model"
+	"zippilot/authentication/internal/database"
+	"zippilot/authentication/internal/model"
 
 	"gorm.io/gorm"
 	"github.com/google/uuid"

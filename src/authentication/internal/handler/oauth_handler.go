@@ -6,11 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"primejobs/user-service/internal/model"
-	"primejobs/user-service/internal/repository"
-	"primejobs/user-service/internal/service/jwt"
-	"primejobs/user-service/internal/service/oauth"
-
+	"zippilot/authentication/internal/model"
+	"zippilot/authentication/internal/repository"
+	"zippilot/authentication/internal/service/jwt"
+	"zippilot/authentication/internal/service/oauth"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )

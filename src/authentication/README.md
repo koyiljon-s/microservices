@@ -13,7 +13,7 @@ A Go-based microservice for user management using Gin framework, PostgreSQL, and
 
    ```bash
    git clone https://github.com/koyiljon-s/user-service.git   
-   cd user-service
+   cd src/authentication
    ```
 
 2. Copy the environment file and update the values:
@@ -32,7 +32,12 @@ A Go-based microservice for user management using Gin framework, PostgreSQL, and
 This will start both the PostgreSQL database and the Go application:
 
 ```bash
-docker compose -f src/user-service/compose.yml up
+docker compose up --build
+docker compose up db
+```
+
+```go
+go run cmd/api/main.go
 ```
 
 The service will be available at `http://localhost:8000`.

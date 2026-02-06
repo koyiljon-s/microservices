@@ -10,7 +10,7 @@ import (
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"primejobs/user-service/internal/model"
+	"zippilot/authentication/internal/model"
 )
 
 var DB *gorm.DB
